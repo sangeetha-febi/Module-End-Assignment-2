@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+
+    <style>
+    
+        .error{
+            color: red;
+            font-weight: bold;
+        }
+
+        .success{
+            color: green;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+        #loginForm{
+           padding-left: 35%;
+           margin-top: 60px;
+           
+        }
+        #heading{
+            text-align: center;
+        }
+      
+    </style>
+
+</head>
+<body>
+    <h1 id="heading"> Login Form</h1>
+    <form id="loginForm">
+        <label for="Name">Full Name</label>
+        <input type="text" id="Name" placeholder="Sangeetha" required><br><br>
+       
+
+         <label for="Enter E-mail Id">Enter mail Id </label>
+        <input type="text" class="mail" id="email" placeholder="sangeethaveerakumar@gmail.com">
+        <div class="error" id="emailError"></div><br>
+
+        <label for="password">Enter New Password</label>
+        <input type="password" id="password" placeholder="sangee@123">
+        <div class="error" id="passwordError"></div><br>
+
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <input type="password"  id="confirmPassword" required>
+        <div class="error" id="confirmPasswordError"></div><br>
+
+        <label class="form-check-label" for="terms">Agree to terms and conditions</label>
+        <input class="form-check-input" type="checkbox" id="terms" required>
+
+                <button type="submit">Login</button>
+
+    </form>
+
+    <div class="success" id="loginOutput"></div>
+</body>
+</html>
